@@ -1,0 +1,107 @@
+/* body {
+    font: 400 15px Lato, sans-serif;
+    line-height: 1.8;
+    color: #818181;
+    background-color: black;
+  } */
+  h3 {
+    font-size: 20px;
+    /* margin-top: 58px; */
+    color:rgb(195, 227, 228);
+    font-weight: 80;
+    letter-spacing: 1.5px;
+    animation:fadeIn 0.7s;
+    /* text-transform: uppercase; */
+    font-family: Montserrat, sans-serif;
+  }
+  h2 {
+    font-size: 40px;
+    color:#7ae0d3;
+    font-weight: 100;
+    letter-spacing: 1.5px;
+    margin-top: 65px;
+    animation:fadeIn 0.6s;
+    font-family: Montserrat, sans-serif;
+  }
+  @keyframes fadeIn{
+    0%{opacity:0;}
+    50%{opacity:0.2;}
+    80%{opacity:0.6;}
+    90%{opacity:0.9;}
+    100%{opacity:1;}
+    }
+  /* h4 {
+    font-size: 50px;
+    line-height: 1.375em;
+    color:white;
+    font-weight: 200;
+    margin-bottom: 30px;
+  }    */
+  
+  .container-fluid {
+    /* padding: 10px 10px; */
+    margin-top: 95px;
+    background-color: black;
+  }
+  .bg-grey {
+    background-color: #f6f6f6;
+  }
+  
+  
+  .item h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    font-weight: 400;
+    font-style: italic;
+    margin: 70px 0;
+  }
+  .item span {
+    font-style: normal;
+  }
+  
+  footer .glyphicon {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #f4511e;
+  }
+  .slideanim {visibility:hidden;}
+  .slide {
+    animation-name: slide;
+    -webkit-animation-name: slide;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    visibility: visible;
+  }
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  i{
+    animation:fadeIn 0.7s;
+
+  }
+  .btn-outline-primary {
+    background-color:black;
+    border-color: #7ae0d3;;
+    border-radius: 24px;
+    color:#7ae0d3;
+    font-size: 20px;
+    height:55px;
+    width:300px;
+    animation:fadeIn 0.8s;
+    margin-left:25px;
+    margin-right:25px;
+    margin-bottom:5px;
+  }
+
+  .btn-outline-primary:active, .btn-outline-primary:focus, .btn-outline-primary:hover {
+    color: #fff;
+    background-color: #7ae0d3!important;
+  }
+  

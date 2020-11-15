@@ -1,0 +1,100 @@
+
+  h2 {
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #303030;
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
+  h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    color: #303030;
+    font-weight: 400;
+    margin-bottom: 30px;
+  }  
+  .container-fluid {
+    padding: 0px 0px;
+  }
+  .navbar {
+    margin-bottom: 0;
+    /* background-color: black; */
+    /* background: linear-gradient(110deg,  71.075%, #13194d 60%); */
+    background-color:transparent;
+    /* background: linear-gradient(110deg, #fdcd3b 71.085%, #ffed4b 60%); */
+    /* background-image:url('../assets/navbar.png'); */
+    z-index: 9999;
+    border: 0;
+    font-size: 17px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 1px;
+    border-radius:0;
+    font-family: Montserrat;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    /* font-family: "Times New Roman", Times, serif; */
+  }
+  .navbar li a, .navbar {
+    color:white !important;
+    font-size: 17px;
+  }
+  .navbar-nav li a:hover, .navbar-nav li.active a {
+    color: #7ae0d3!important;
+    /* color:grey; */
+    /* background-color:grey !important; */
+  }
+  .navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #fff !important;
+  }
+  footer .glyphicon {
+    font-size: 20px;
+    margin-bottom: 20px;
+    /* color: #f4511e; */
+  }
+  .slideanim {visibility:hidden;}
+  .slide {
+    animation-name: slide;
+    -webkit-animation-name: slide;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    visibility: visible;
+  }
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  @-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .logo {
+      font-size: 200px;
+      font-style: italic;
+      color:#7ae0d3 ;
+    }
+  }
+  .navbar-brand {
+    color: #7ae0d3 !important;
+    font-family: cursive;
+    font-size: 35px;
+    
+  }

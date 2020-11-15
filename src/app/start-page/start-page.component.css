@@ -1,0 +1,154 @@
+body {
+  font: 400 15px Lato, sans-serif;
+  line-height: 1.8;
+  color: #818181;
+}
+h3 {
+  font-size: 35px;
+  color:rgb(195, 227, 228);
+  font-weight: 80;
+  letter-spacing: 1.5px;
+  /* text-transform: uppercase; */
+  font-family: Montserrat, sans-serif;
+}
+h2 {
+  font-size: 70px;
+  color:white;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  margin-top: 58px;
+  animation:fadeIn 0.6s;
+  font-family: Montserrat, sans-serif;
+}
+@keyframes fadeIn{
+  0%{opacity:0;}
+  50%{opacity:0.2;}
+  80%{opacity:0.6;}
+  90%{opacity:0.9;}
+  100%{opacity:1;}
+  }
+/* h4 {
+  font-size: 50px;
+  line-height: 1.375em;
+  color:white;
+  font-weight: 200;
+  margin-bottom: 30px;
+}   */
+
+.container-fluid {
+  padding: 60px 50px;
+  margin-top: 130px;
+}
+.bg-grey {
+  background-color: #f6f6f6;
+}
+
+
+.item h4 {
+  font-size: 19px;
+  line-height: 1.375em;
+  font-weight: 400;
+  font-style: italic;
+  margin: 70px 0;
+}
+.item span {
+  font-style: normal;
+}
+
+footer .glyphicon {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #f4511e;
+}
+.slideanim {visibility:hidden;}
+.slide {
+  animation-name: slide;
+  -webkit-animation-name: slide;
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+  visibility: visible;
+}
+@keyframes slide {
+  0% {
+    opacity: 0;
+    transform: translateY(70%);
+  } 
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+.btn-outline-primary {
+  background-color:black;
+  border-color: #7ae0d3;;
+  border-radius: 24px;
+  color:#7ae0d3;
+  font-size: 20px;
+  height:55px;
+  width:300px;
+  animation:fadeI 8s;
+}
+@keyframes fadeI{
+  0%{opacity:0;}
+  100%{opacity:1;}
+  }
+
+.btn-outline-primary:active, .btn-outline-primary:focus, .btn-outline-primary:hover {
+  color: #fff;
+  background-color: #7ae0d3!important;
+}
+@-webkit-keyframes slide {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(70%);
+  } 
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+  }
+}
+@media screen and (max-width: 768px) {
+  .col-sm-4 {
+    text-align: center;
+    margin: 25px 0;
+  }
+  .btn-lg {
+    width: 100%;
+    margin-bottom: 35px;
+    color: #fff;
+    
+  }
+}
+@media screen and (max-width: 480px) {
+  .logo {
+    font-size: 150px;
+  }
+}
+.typewriter h4 {
+  color: #fff;
+  font-weight: 200;
+  font-size:35px;
+  font-family: Montserrat, sans-serif;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  /* border-right: .085em solid #fff; */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  line-height: 1.375em;
+  animation: 
+    typing 5.5s steps(30, end),
+    blink-caret .6s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color:white }
+}
+
+
