@@ -11,32 +11,20 @@
   <script src="styles.css"></script>
   <link rel="icon" type="image/x-icon" href="assets/tab.ico">
   <style>
-    .text_1 {
-  overflow: hidden;
-  white-space: nowrap;
-  animation: typewriter;
-  display: inline-block;
-  position: relative;
-  animation-duration: 10s;
-  animation-timing-function: steps(25, end);
-  animation-iteration-count: infinite;
+    h1 {
+  font-size: 4vh;
+  color: #fff;
 }
-.text_1::after {
-  content: "|";
-  position: absolute;
-  right: 0;
-  animation: caret infinite;
-  animation-duration: 1s;
-  animation-timing-function: steps(1, end);
-}
+
 @keyframes typewriter {
   0%, 100% {
     width: 0;
   }
   20%, 80% {
-    width: 10.2em;
+    width: 10em;
   }
 }
+
 @keyframes caret {
   0%, 100% {
     opacity: 0;
@@ -45,6 +33,29 @@
     opacity: 1;
   }
 }
+
+.text_1 {
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typewriter;
+  display: inline-block;
+  position: relative;
+  animation-duration: 10s;
+  animation-timing-function: steps(20, end);
+  animation-iteration-count: infinite;
+}
+
+
+.text_1::after {
+  content: "|";
+  position: absolute;
+  color: #7ae0d3;
+  right: 0;
+  animation: caret infinite;
+  animation-duration: 1s;
+  animation-timing-function: steps(1, end);
+}
+
     body {
     font: 400 15px Lato, sans-serif;
     line-height: 1.8;
@@ -152,13 +163,15 @@
     90%{opacity:0.9;}
     100%{opacity:1;}
     }
-  h4{
-    font-size: 20px;
-    line-height: 1.375em;
+
+h4 {
+    font-size: 10px;
     color:white;
-    font-weight: 200;
-    margin-bottom: 30px;
-  }  
+    font-weight: 50;
+    letter-spacing: 0.6px;
+    animation:fadeIn 0.7s;
+    font-family: Montserrat, sans-serif;
+  }
   
   .container-fluid {
     padding: 60px 50px;
@@ -247,14 +260,13 @@
     }
   }
 
-  .typewriter h3 {
+  .typewriter h4{
     color: #fff;
-    font-weight: 200;
-    font-size: 4vh;
+    font-weight: 60;
     font-family: Montserrat, sans-serif;
     overflow: hidden; /* Ensures the content is not revealed until the animation */
     /* border-right: .085em solid #fff; */
-    white-space: nowrap; /* Keeps the content on a single line */
+    /* white-space: nowrap;  */
     margin: 0 auto; /* Gives that scrolling effect as the typing happens */
     line-height: 1.375em;
     animation: 
@@ -385,6 +397,7 @@
     animation:fadeIn 0.7s;
     /* text-transform: uppercase; */
     font-family: Montserrat, sans-serif;
+    /* font-family: Consolas, monospace; */
   }
   h7 {
     font-size: 40px;
@@ -394,6 +407,7 @@
     margin-top: 65px;
     animation:fadeIn 0.6s;
     font-family: Montserrat, sans-serif;
+    /* font-family: Consolas, monospace; */
   }
   </style>
 <link rel="stylesheet" href="styles.9e9c214015070e945c8b.css"></head>
@@ -424,8 +438,10 @@
     <div class="row text-center" >
     
         <h2>Jenell Mathias</h2>
+        
         <div class="typewriter">
-        <h3>I'm a <b style="color:#7ae0d3;">Software Engineer..</b></h3>
+          <h1><span class="text_1">I'm a <b style="color:#7ae0d3;">Developer.......</b></span></h1>
+        <!-- <h4>I'm a <b style="color:#7ae0d3;">Software Engineer..</b></h4> -->
         <!-- <h4><span class="text_1">I'm a <b style="color:#7ae0d3;">Software Engineer..</b></span></h4> -->
         </div>
         <br>
