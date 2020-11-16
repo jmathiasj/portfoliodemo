@@ -11,6 +11,40 @@
   <script src="styles.css"></script>
   <link rel="icon" type="image/x-icon" href="assets/tab.ico">
   <style>
+    .text_1 {
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typewriter;
+  display: inline-block;
+  position: relative;
+  animation-duration: 10s;
+  animation-timing-function: steps(25, end);
+  animation-iteration-count: infinite;
+}
+.text_1::after {
+  content: "|";
+  position: absolute;
+  right: 0;
+  animation: caret infinite;
+  animation-duration: 1s;
+  animation-timing-function: steps(1, end);
+}
+@keyframes typewriter {
+  0%, 100% {
+    width: 0;
+  }
+  20%, 80% {
+    width: 10.2em;
+  }
+}
+@keyframes caret {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
     body {
     font: 400 15px Lato, sans-serif;
     line-height: 1.8;
@@ -95,7 +129,7 @@
     
   }
   h3 {
-    font-size: 35px;
+    font-size: 4vh;
     color:rgb(195, 227, 228);
     font-weight: 80;
     letter-spacing: 1.5px;
@@ -103,7 +137,7 @@
     font-family: Montserrat, sans-serif;
   }
   h2 {
-    font-size: 70px;
+    font-size: 70vh;
     color:white;
     font-weight: 600;
     letter-spacing: 1.5px;
@@ -118,13 +152,13 @@
     90%{opacity:0.9;}
     100%{opacity:1;}
     }
-  /* h4 {
-    font-size: 50px;
+  h4{
+    font-size: 20px;
     line-height: 1.375em;
     color:white;
     font-weight: 200;
     margin-bottom: 30px;
-  }   */
+  }  
   
   .container-fluid {
     padding: 60px 50px;
@@ -135,8 +169,8 @@
   }
   
   
-  .item h4 {
-    font-size: 19px;
+  .item  {
+    font-size: 19vh;
     line-height: 1.375em;
     font-weight: 400;
     font-style: italic;
@@ -174,8 +208,8 @@
     border-color: #7ae0d3;;
     border-radius: 24px;
     color:#7ae0d3;
-    font-size: 20px;
-    height:55px;
+    font-size: 16px;
+    height:55vh;
     width:300px;
     margin-left: 15px;
     margin-right: 15px;
@@ -213,10 +247,10 @@
     }
   }
 
-  .typewriter h4 {
+  .typewriter h3 {
     color: #fff;
     font-weight: 200;
-    font-size:35px;
+    font-size: 4vh;
     font-family: Montserrat, sans-serif;
     overflow: hidden; /* Ensures the content is not revealed until the animation */
     /* border-right: .085em solid #fff; */
@@ -250,7 +284,7 @@
   .carousel-indicators li.active {
     background-color: #f4511e;
   }
-  .item h4 {
+  .item {
     font-size: 19px;
     line-height: 1.375em;
     font-weight: 400;
@@ -286,10 +320,10 @@
   .panel-footer {
     background-color: white !important;
   }
-  .panel-footer h3 {
+  .panel-footer {
     font-size: 32px;
   }
-  .panel-footer h4 {
+  .panel-footer  {
     color: #aaa;
     font-size: 14px;
   }
@@ -391,7 +425,8 @@
     
         <h2>Jenell Mathias</h2>
         <div class="typewriter">
-        <h4>I'm a <b style="color:#7ae0d3;">Software Engineer..</b></h4>
+        <h3>I'm a <b style="color:#7ae0d3;">Software Engineer..</b></h3>
+        <!-- <h4><span class="text_1">I'm a <b style="color:#7ae0d3;">Software Engineer..</b></span></h4> -->
         </div>
         <br>
             <a href="#about"><button class="btn btn-outline-primary btn-lg">Know More About Me</button></a>
@@ -415,7 +450,7 @@
               <i class="fa fa-map-marker" style="font-size:20px;color:white">     Mumbai, India</i><br>
               <i class="fa fa-user" style="font-size:20px;color:white">     Open To Work</i>
               <h6>Hello World!! <br>My name is Jenell Mathias and I am a software engineer. I specialise in making full stack applications. I love exploring new technologies and I like to see myself as a passionate developer and an eternal learner.</h6><br>
-              <button class="btn btn-outline-primary btn-lg">Click to Download My Resume</button>
+              <button class="btn btn-outline-primary btn-lg">Click to Download Resume</button>
               <button class="btn btn-outline-primary btn-lg">Click to Check My Projects</button>
               <br><br>
               <div class="buttons text-center">
@@ -438,5 +473,5 @@
 </div>
 </div>
   <!-- <app-root></app-root> -->
-<script src="runtime.e227d1a0e31cbccbf8ec.js" defer></script><script src="polyfills.a4021de53358bb0fec14.js" defer></script><script src="main.5727c845f1df73740202.js" defer></script></body>
+<script src="runtime.e227d1a0e31cbccbf8ec.js" defer></script><script src="polyfills.a4021de53358bb0fec14.js" defer></script><script src="main.15529529bb7d174d9b5f.js" defer></script></body>
 </html>
