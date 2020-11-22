@@ -1,21 +1,88 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
+<head><base href="https://github.com/jmathiasj/portfolio">
+  <!-- Theme Made By www.w3schools.com -->
   <title>Jenell Mathias Portfolio</title>
-  <base href="https://jmathiasj.github.io/portfolio/">  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <script src="styles.css"></script>
   <link rel="icon" type="image/x-icon" href="assets/tab.ico">
   <style>
-    h1 {
-  font-size: 4vh;
-  color: #fff;
+.button {
+    padding: 15px 25px;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: black;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
 }
-
+user agent stylesheet
+button {
+    appearance: button;
+    /* -webkit-writing-mode: horizontal-tb !important; */
+    text-rendering: auto;
+    color: -internal-light-dark(black, white);
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: center;
+    align-items: flex-start;
+    cursor: default;
+    background-color: -internal-light-dark(rgb(239, 239, 239), rgb(59, 59, 59));
+    box-sizing: border-box;
+    margin: 0em;
+    font: 400 13.3333px Arial;
+    padding: 1px 6px;
+    border-width: 2px;
+    border-style: outset;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-image: initial;
+}
+  h8 {
+    /* margin-top: 58px; */
+    font-size: 18px;
+    color:#7ae0d3;
+    font-weight: 40;
+    letter-spacing: 2px;
+    margin-top: 65px;
+    animation:fadeIn 0.6s;
+    font-family: Montserrat, sans-serif;
+  }
+    .btn-outline-primary {
+    background-color:black;
+    border-color: #7ae0d3;;
+    border-radius: 24px;
+    color:#7ae0d3;
+    font-size: 16px;
+    height:38px;
+    width:300px;
+    /* margin-left: 15px; 
+    margin-bottom: 5px; 
+    margin-top:5px;
+    margin-right: 15px; */
+    animation:fadeI 8s;
+  }
+  @keyframes fadeI{
+    0%{opacity:0;}
+    100%{opacity:1;}
+    }
+  
+  .btn-outline-primary:active, .btn-outline-primary:focus, .btn-outline-primary:hover {
+    color: #fff;
+    background-color: #7ae0d3!important;
+  }
+  
 @keyframes typewriter {
   0%, 100% {
     width: 0;
@@ -55,237 +122,61 @@
   animation-duration: 1s;
   animation-timing-function: steps(1, end);
 }
-
-    body {
+  body {
     font: 400 15px Lato, sans-serif;
     line-height: 1.8;
     color: #818181;
+    background-color: black;
+  }
+  h2 {
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #303030;
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
+  h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    color: #7ae0d3;
+    font-weight: 40;
+    margin-bottom: 30px;
+  }  
+  .jumbotron {
     background-image: url('assets/home.jpg');
     background-size: cover;
     background-attachment: fixed;
-  }
-  .navbar {
-    margin-bottom: 0;
-    background-color:transparent;
-    z-index: 9999;
-    border: 0;
-    font-size: 17px !important;
-    line-height: 1.42857143 !important;
-    letter-spacing: 1px;
-    border-radius:0;
-    font-family: Montserrat;
-  }
-  .navbar li a, .navbar {
-    color:white !important;
-    font-size: 17px;
-  }
-  .navbar-nav li a:hover, .navbar-nav li.active a {
-    color: #7ae0d3!important;
- 
-  }
-  .navbar-default .navbar-toggle {
-    border-color: transparent;
-    color: #fff !important;
-  }
-  footer .glyphicon {
-    font-size: 20px;
-    margin-bottom: 20px;
-    /* color: #f4511e; */
-  }
-  .slideanim {visibility:hidden;}
-  .slide {
-    animation-name: slide;
-    -webkit-animation-name: slide;
-    animation-duration: 1s;
-    -webkit-animation-duration: 1s;
-    visibility: visible;
-  }
-  @keyframes slide {
-    0% {
-      opacity: 0;
-      transform: translateY(70%);
-    } 
-    100% {
-      opacity: 1;
-      transform: translateY(0%);
-    }
-  }
-  @-webkit-keyframes slide {
-    0% {
-      opacity: 0;
-      -webkit-transform: translateY(70%);
-    } 
-    100% {
-      opacity: 1;
-      -webkit-transform: translateY(0%);
-    }
-  }
-  @media screen and (max-width: 768px) {
-    .col-sm-4 {
-      text-align: center;
-      margin: 25px 0;
-    }
-  }
-  @media screen and (max-width: 480px) {
-    .logo {
-      font-size: 200px;
-      font-style: italic;
-      color:#7ae0d3 ;
-    }
-  }
-  .navbar-brand {
-    color: #7ae0d3 !important;
-    font-family: cursive;
-    font-size: 35px;
-    
-  }
-  h3 {
-    font-size: 4vh;
-    color:rgb(195, 227, 228);
-    font-weight: 80;
-    letter-spacing: 1.5px;
-    /* text-transform: uppercase; */
+    background-color: black;
+    color: #fff;
+    padding: 100px 25px;
     font-family: Montserrat, sans-serif;
   }
-  h2 {
-    font-size: 70vh;
-    color:white;
-    font-weight: 600;
-    letter-spacing: 1.5px;
-    margin-top: 58px;
-    animation:fadeIn 0.6s;
-    font-family: Montserrat, sans-serif;
-  }
-  @keyframes fadeIn{
-    0%{opacity:0;}
-    50%{opacity:0.2;}
-    80%{opacity:0.6;}
-    90%{opacity:0.9;}
-    100%{opacity:1;}
-    }
-
-h4 {
-    font-size: 10px;
-    color:white;
-    font-weight: 50;
-    letter-spacing: 0.6px;
-    animation:fadeIn 0.7s;
-    font-family: Montserrat, sans-serif;
-  }
-  
   .container-fluid {
     padding: 60px 50px;
-    margin-top: 130px;
+    color: white;
+    font-family: Montserrat, sans-serif;
   }
   .bg-grey {
     background-color:black;
   }
-  
-  
-  .item  {
-    font-size: 19vh;
-    line-height: 1.375em;
-    font-weight: 400;
-    font-style: italic;
-    margin: 70px 0;
-  }
-  .item span {
-    font-style: normal;
-  }
-  
-  footer .glyphicon {
-    font-size: 20px;
-    margin-bottom: 20px;
+  .logo-small {
     color: #f4511e;
+    font-size: 50px;
   }
-  .slideanim {visibility:hidden;}
-  .slide {
-    animation-name: slide;
-    -webkit-animation-name: slide;
-    animation-duration: 1s;
-    -webkit-animation-duration: 1s;
-    visibility: visible;
+  .logo {
+    color: #f4511e;
+    font-size: 200px;
   }
-  @keyframes slide {
-    0% {
-      opacity: 0;
-      transform: translateY(70%);
-    } 
-    100% {
-      opacity: 1;
-      transform: translateY(0%);
-    }
+  .thumbnail {
+    padding: 0 0 15px 0;
+    border: none;
+    border-radius: 0;
   }
-  .btn-outline-primary {
-    background-color:black;
-    border-color: #7ae0d3;;
-    border-radius: 24px;
-    color:#7ae0d3;
-    font-size: 16px;
-    height:55vh;
-    width:300px;
-    margin-left: 15px;
-    margin-right: 15px;
-    animation:fadeI 8s;
+  .thumbnail img {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10px;
   }
-  @keyframes fadeI{
-    0%{opacity:0;}
-    100%{opacity:1;}
-    }
-  
-  .btn-outline-primary:active, .btn-outline-primary:focus, .btn-outline-primary:hover {
-    color: #fff;
-    background-color: #7ae0d3!important;
-  }
-  @-webkit-keyframes slide {
-    0% {
-      opacity: 0;
-      -webkit-transform: translateY(70%);
-    } 
-    100% {
-      opacity: 1;
-      -webkit-transform: translateY(0%);
-    }
-  }
-  @media screen and (max-width: 768px) {
-    .col-sm-4 {
-      text-align: center;
-      margin: 25px 0;
-    }
-    .btn-lg {
-      width: 100%;
-      margin-bottom: 35px;
-      color: #fff;
-      
-    }
-  }
-
-  .typewriter h4{
-    color: #fff;
-    font-weight: 60;
-    font-family: Montserrat, sans-serif;
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    /* border-right: .085em solid #fff; */
-    /* white-space: nowrap;  */
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    line-height: 1.375em;
-    animation: 
-      typing 5.5s steps(30, end),
-      blink-caret .6s step-end infinite;
-  }
-  
-  /* The typing effect */
-  @keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
-  }
-  
-  /* The typewriter cursor effect */
-  @keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color:white }
-  }
-  
   .carousel-control.right, .carousel-control.left {
     background-image: none;
     color: #f4511e;
@@ -296,7 +187,7 @@ h4 {
   .carousel-indicators li.active {
     background-color: #f4511e;
   }
-  .item {
+  .item h4 {
     font-size: 19px;
     line-height: 1.375em;
     font-weight: 400;
@@ -332,11 +223,11 @@ h4 {
   .panel-footer {
     background-color: white !important;
   }
-  .panel-footer {
+  .panel-footer h3 {
     font-size: 32px;
   }
-  .panel-footer  {
-    color: #aaa;
+  .panel-footer h4 {
+    color:white;
     font-size: 14px;
   }
   .panel-footer .btn {
@@ -344,7 +235,33 @@ h4 {
     background-color: #f4511e;
     color: #fff;
   }
-
+  .navbar {
+    margin-bottom: 0;
+    background-color: black;
+    z-index: 9999;
+    border: 0;
+    font-size: 12px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+    font-family: Montserrat, sans-serif;
+  }
+  .navbar li a, .navbar .navbar-brand {
+    color: #fff !important;
+  }
+  .navbar-nav li a:hover, .navbar-nav li.active a {
+    color:white!important;
+    background-color:#7ae0d3 !important;
+  }
+  .navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #fff !important;
+  }
+  footer .glyphicon {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color:#7ae0d3;
+  }
   .slideanim {visibility:hidden;}
   .slide {
     animation-name: slide;
@@ -388,30 +305,10 @@ h4 {
       font-size: 150px;
     }
   }
-  h6 {
-    font-size: 20px;
-    /* margin-top: 58px; */
-    color:rgb(195, 227, 228);
-    font-weight: 80;
-    letter-spacing: 1.5px;
-    animation:fadeIn 0.7s;
-    /* text-transform: uppercase; */
-    font-family: Montserrat, sans-serif;
-    /* font-family: Consolas, monospace; */
-  }
-  h7 {
-    font-size: 40px;
-    color:#7ae0d3;
-    font-weight: 100;
-    letter-spacing: 1.5px;
-    margin-top: 65px;
-    animation:fadeIn 0.6s;
-    font-family: Montserrat, sans-serif;
-    /* font-family: Consolas, monospace; */
-  }
   </style>
-<link rel="stylesheet" href="styles.9e9c214015070e945c8b.css"></head>
-<body>
+<link rel="stylesheet" href="styles.0e4338761429b4eb16ac.css"></head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
   <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container" style=" margin-top:8px;">
       <div class="navbar-header">
@@ -420,74 +317,231 @@ h4 {
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>                        
         </button>
-        <a class="navbar-brand" href="#myPage"><img src='assets/Frame 1.png' height="100px" width="100px"></a>
+        <a class="navbar-brand" href="#myPage"><img src='assets/Frame 1.png' height="36px" width="60px"></a>
       </div>
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav navbar-right">
           <li><a class="nav-link" href="#about">About Me</a></li>
-          <li><a href="#services">Resume</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <!-- <li><a href="#services">Resume</a></li> -->
+          <li><a href="#projects">My Projects</a></li>
+          <li><a href="#contact">Reach Me</a></li>
         </ul>
       </div>
     </div>
   </nav>
-  <div class="container">
-  <!-- ​<router-outlet></router-outlet> -->
-  <div id="home" class="container-fluid">
-    <div class="row text-center" >
-    
-        <h2>Jenell Mathias</h2>
-        
-        <div class="typewriter">
-          <h1><span class="text_1">I'm a <b style="color:#7ae0d3;">Developer.......</b></span></h1>
-        <!-- <h4>I'm a <b style="color:#7ae0d3;">Software Engineer..</b></h4> -->
-        <!-- <h4><span class="text_1">I'm a <b style="color:#7ae0d3;">Software Engineer..</b></span></h4> -->
+
+<div class="jumbotron text-center">
+  <h1>Jenell Mathias</h1> 
+  <p><span class="text_1">I'm a <b style="color:#7ae0d3;">Developer....</b></span></p> 
+  <a href="#about"><button class="btn btn-outline-primary ">Know More About Me</button></a>
+</div>
+
+<!-- Container (About Section) -->
+<div id="about" class="container-fluid" style="background-color: black;">
+  <div class="row slideanim">
+    <div class="col-sm-8">
+      <br>
+      <br>
+      <br>
+      <h1 class="text-center">About Me</h1>
+      <br>
+      <br>
+      <br>
+      <h8 class="introduction">Hello World!! <br>My name is Jenell Mathias and I am a software engineer. I specialise in making full stack applications. I love exploring new technologies and I like to see myself as a passionate developer and an eternal learner.</h8><br>
+      <br>
+      <br>
+      <!-- <button class="btn btn-outline-primary btn-lg">Click to Download Resume</button> -->
+      <a href="#projects"><button style="height:42px;"class="btn btn-outline-primary btn-lg text-center">Click to Check My Projects</button></a>
+      <!-- <a href="https://m.facebook.com/jenell.mathias" style="margin:10px" target="_blank">
+        <i class="fa fa-facebook" style="font-size:20px;color:white"></i>
+        </a>
+        <a href="https://github.com/jmathiasj" target="_blank" style="margin:10px">
+        <i class="fa fa-github" style="font-size:20px;color:white"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/jenell-mathias" target="_blank" style="margin:10px">
+        <i class="fa fa-linkedin" style="font-size:20px;color:white"></i>
+        </a> -->
+              <!-- <br><br> -->
+ 
+    </div>
+    <div class="col-sm-4">
+      <span><img src="assets/aboutme.jpg" height="530px" width="300px"></span>
+      <!-- <span class="glyphicon glyphicon-signal logo"></span> -->
+    </div>
+  </div>
+</div>
+
+<div id="projects" class="container-fluid bg-grey slideanim">
+  <h1 class="text-center">My Projects
+    <!-- <small>Secondary Text</small> -->
+  </h1>
+  <br>
+  <br>
+  <!-- <br> -->
+
+  <div class="row">
+    <div class="col-lg-4 col-sm-6 mb-4">
+      <div class="card h-100">
+        <!-- <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a> -->
+        <div class="card-body"   style="box-shadow: 6px 9px 7px  #7ae0d3; border-color:#7ae0d3;;border-style:solid; border-radius:15px; padding:7px;background-color: black;">
+          <h4 class="card-title">
+            <p style="color:white;font-weight: 200;letter-spacing:2px;">Diabetic Retinopathy</pstyle="color:teal;font-weight: 200;">
+          </h4>
+          <p class="card-text" style="color: #7ae0d3;letter-spacing:0.7px">A Web App that identifies and classifies uploaded retinal fundus images into various classes of diabetic retinopathy ranging from severe to no retinopathy using transfer learning.</p>
         </div>
         <br>
-            <a href="#about"><button class="btn btn-outline-primary btn-lg">Know More About Me</button></a>
+        <br>
+      </div>
     </div>
-    <br>
-    <br>
-    <br>
+    <div class="col-lg-4 col-sm-6 mb-4">
+      <div class="card h-100">
+        <!-- <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a> -->
+        <div class="card-body"  style="box-shadow: 6px 9px 7px  #7ae0d3; border-color:#7ae0d3;;border-style:solid; border-radius:15px; padding:7px;background-color: black;">
+          <h4 class="card-title">
+            <p style="color:white;font-weight: 200;letter-spacing:2px;">Rehab Web App</p>
+          </h4>
+          <p class="card-text" style="color: #7ae0d3;letter-spacing:0.7px">An app that utilises NodeJS for the Backend and MongoDB as the database. It also involves implementation of various API's such as Skype API for video calling as well as the Nodemailer module.</p>
+        </div>
+        <br>
+        <br>
+      </div>
+    </div>
+    <div class="col-lg-4 col-sm-6 mb-4">
+      <div class="card h-100">
+        <!-- <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a> -->
+        <div class="card-body"  style="box-shadow: 6px 9px 7px  #7ae0d3; border-color:#7ae0d3;;border-style:solid; border-radius:15px; padding:7px;background-color: black;">
+          <h4 class="card-title">
+            <p style="color:white;font-weight: 200;letter-spacing:2px;">Plant Classifier</p>
+          </h4>
+          <p class="card-text" style="color: #7ae0d3;letter-spacing:0.7px">An Android App that identifies plant species from an image. Tensorflow and Keras libraries were utilised for the image data augmentation and preprocessing and the model was imported using tflite.</p>
+        </div>
+        <br>
+        <br>
+      </div>
+    </div>
+    <div class="col-lg-4 col-sm-6 mb-4">
+      <div class="card h-100">
+        <!-- <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a> -->
+        <div class="card-body"  style="box-shadow: 6px 9px 7px  #7ae0d3; border-color:#7ae0d3;;border-style:solid; border-radius:15px; padding:7px;background-color: black;">
+          <h4 class="card-title">
+            <p style="color:white;font-weight: 200;letter-spacing:2px;">Househelp App</p>
+          </h4>
+          <p class="card-text" style="color: #7ae0d3;letter-spacing:0.7px">A Website made using Python Django that could be utilised for hiring househelp under various domains especially in India. The Frontend was styled using Bootstrap and CSS.</p>
+        </div> 
+        <br>
+        <br>
+      </div>
+    </div>
+    <div class="col-lg-4 col-sm-6 mb-4">
+      <div class="card h-100">
+        <!-- <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a> -->
+        <div class="card-body" style="box-shadow: 6px 9px 7px  #7ae0d3; border-color:#7ae0d3;;border-style:solid; border-radius:15px; padding:7px;background-color: black;">
+          <h4 class="card-title">
+            <p style="color:white;font-weight: 200;letter-spacing:2px;">Portfolio</p>
+          </h4>
+          <p class="card-text" style="color: #7ae0d3;letter-spacing:0.7px">A website that displays information about the various projects I have worked on, my interests and myself. The website was hosted on Github Pages using Github Actions.</p>
+        </div>
+        <br>
+        <br>
+      </div>
+    </div>
+    <div class="col-lg-4 col-sm-6 mb-4">
+      <div class="card h-100">
+        <!-- <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a> -->
+        <div class="card-body" style="box-shadow: 6px 9px 7px  #7ae0d3; border-color:#7ae0d3;;border-style:solid; border-radius:15px; padding:7px;background-color: black;">
+          <h4 class="card-title">
+            <p style="color:white;font-weight: 200;letter-spacing:2px;">Extract Retinopathy</p>
+          </h4>
+          <p class="card-text" style="color: #7ae0d3;letter-spacing:0.7px">The pre-trained VGG-16 Model was retrained on retinal fundus images from various Kaggle datasets.OpenCV and Matplotlib libraries were used for the feature extraction.</p>
+        </div>
+        <br>
+        <br>
+      </div>
+    </div>
   </div>
-  
-  
+    
+</div>
 
-<div id="about" class="container-fluid bg-grey">
-  <div class="row " >
-      
-          <div class="col-sm-3 col-md-6 col-lg-8">
-            <br>
-            <br>
-            <br>
-              <h7>Jenell Mathias</h7><br>
-              <i class="fa fa-envelope" style="font-size:20px;color:white">   mathiasjenell@gmail.com</i><br>
-              <i class="fa fa-map-marker" style="font-size:20px;color:white">     Mumbai, India</i><br>
-              <i class="fa fa-user" style="font-size:20px;color:white">     Open To Work</i>
-              <h6>Hello World!! <br>My name is Jenell Mathias and I am a software engineer. I specialise in making full stack applications. I love exploring new technologies and I like to see myself as a passionate developer and an eternal learner.</h6><br>
-              <button class="btn btn-outline-primary btn-lg">Click to Download Resume</button>
-              <button class="btn btn-outline-primary btn-lg">Click to Check My Projects</button>
-              <br><br>
-              <div class="buttons text-center">
-                  <a href="https://m.facebook.com/jenell.mathias" style="margin:10px" target="_blank">
-                  <i class="fa fa-facebook" style="font-size:20px;color:white"></i>
-                  </a>
-                  <a href="https://github.com/jmathiasj" target="_blank" style="margin:10px">
-                  <i class="fa fa-github" style="font-size:20px;color:white"></i>
-                  </a>
-                  <a href="https://www.linkedin.com/in/jenell-mathias" target="_blank" style="margin:10px">
-                  <i class="fa fa-linkedin" style="font-size:20px;color:white"></i>
-                  </a>
-                </div>
-          </div>
-          <div class="col-sm-4">
-              <span><img src="assets/aboutme.jpg" height="620px" width="400px"></span>
-            </div>
-      
+</div>
+</div>
+
+
+<!-- Container (Contact Section) -->
+<div id="contact" class="container-fluid bg-grey">
+  <h1 class="text-center">Reach Me </h1>
+  <br>
+  <br>
+  <div class="row">
+    <div class="col-sm-5">
+      <br>
+      <br>
+      <p style="color: #7ae0d3; font-size:16px"><span class="glyphicon glyphicon-map-marker"></span>   Mumbai, India</p>
+      <p style="color: #7ae0d3; font-size:16px"><span class="glyphicon glyphicon-phone"></span>   +91 9820897370</p>
+      <p style="color: #7ae0d3; font-size:16px"><span class="glyphicon glyphicon-envelope"></span><class="com">   mathiasjenell@gmail.com</p>
+    </div>
+    <div class="col-sm-7 slideanim">
+   <!-- <br>
+      <div class="row">
+        <p style="color: #7ae0d3; font-size:20px; letter-spacing:2px;">Click to view my Github profile: <a href="#about"><button class="button">Github<i class="fab fa-github"></i></button></a>
+        </p>
+        <br>
+      </div>
+    
+      <div class="row">
+        <br>
+        <p style="color: #7ae0d3; font-size:20px;letter-spacing:2px;">Click to view my LinkedIn profile: <a href="#about"><button class="btn btn-outline-primary ">LinkedIn</button></a>
+        </p> -->
+      </div>
+    </div>
   </div>
 </div>
-</div>
-  <!-- <app-root></app-root> -->
+
+
+
+
+<footer class="container-fluid text-center">
+  <a href="#myPage" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a>
+  <p>Made By Jenell Mathias</a></p>
+</footer>
+
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+  
+  $(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slide");
+        }
+    });
+  });
+})
+</script>
+
 <script src="runtime.e227d1a0e31cbccbf8ec.js" defer></script><script src="polyfills.a4021de53358bb0fec14.js" defer></script><script src="main.15529529bb7d174d9b5f.js" defer></script></body>
 </html>
